@@ -10,23 +10,24 @@ const App = () => {
 			productPrice: 50,
 			productDescription: "First product to render",
 			productImage:
-				"https://elcopcbonline.com/var/photo/product/2000x4000/112/368/huf-converse-product-red-skidgrip-1.jpg",
+				"https://mdbootstrap.com/img/Others/documentation/img%20(40)-mini.jpg",
 		},
 		{
 			productName: "Product Two",
 			productPrice: 75,
 			productDescription: "Second product to render",
 			productImage:
-				"https://www.karniinfotech.com/images/portfolio/photography/1.jpg",
+				"https://mdbootstrap.com/img/Others/documentation/img%20(150)-mini.jpg",
 		},
 		{
 			productName: "Product Three",
 			productPrice: 75,
 			productDescription: "Third product to render",
 			productImage:
-				"https://cdn.dashhudson.com/media/640/1572361963.115447556367.jpeg",
+				"https://mdbootstrap.com/img/Others/documentation/img%20(145)-mini.jpg",
 		},
 	]);
+	console.log(products);
 	return (
 		<div className="App">
 			{/* <header className="App-header"></header> */}
