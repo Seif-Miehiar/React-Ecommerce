@@ -1,4 +1,6 @@
 import React from "react";
+import RatingPage from "../rating/rating";
+import ShowItem from "../item/item";
 import {
 	MDBCard,
 	MDBCardImage,
@@ -17,7 +19,7 @@ const ProductItem = ({ items }) => {
 	} else {
 		return items.map((item, index) => {
 			return (
-				<MDBCol lg="3" md="12" className="mb-lg-0 mb-4">
+				<MDBCol key={index} lg="4" md="12" className="mb-lg-1 mb-4 my-5">
 					<MDBCard wide ecommerce>
 						<MDBCardImage
 							className="img-fluid mx-auto"
@@ -44,7 +46,7 @@ const ProductItem = ({ items }) => {
 									<MDBTooltip domElement placement="top">
 										<i className="grey-text fa fa-eye mr-3" />
 										<span>Quick Look</span>
-									</MDBTooltip>{" "}
+									</MDBTooltip>
 									<MDBTooltip domElement placement="top">
 										<i className="grey-text fa fa-heart" />
 										<span>Add to Wishlist</span>
@@ -53,6 +55,8 @@ const ProductItem = ({ items }) => {
 							</MDBCardFooter>
 						</MDBCardBody>
 					</MDBCard>
+					<ShowItem item={item} />
+					<RatingPage />
 				</MDBCol>
 			);
 		});
