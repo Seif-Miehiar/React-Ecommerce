@@ -13,11 +13,11 @@ import {
 } from "mdbreact";
 
 const ProductItem = ({ items }) => {
-	console.log({ items });
 	if (!items || items.length === 0) {
 		return "Loading...";
 	} else {
 		return items.map((item, index) => {
+			const itemOne = [item, index];
 			return (
 				<MDBCol key={index} lg="4" md="12" className="mb-lg-1 mb-4 my-5">
 					<MDBCard wide ecommerce>
@@ -55,7 +55,7 @@ const ProductItem = ({ items }) => {
 							</MDBCardFooter>
 						</MDBCardBody>
 					</MDBCard>
-					<ShowItem item={item} />
+					<ShowItem itemOne={item} />
 					<RatingPage />
 				</MDBCol>
 			);

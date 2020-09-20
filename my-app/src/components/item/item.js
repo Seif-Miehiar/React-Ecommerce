@@ -7,14 +7,12 @@ import {
 	MDBModalBody,
 	MDBModalHeader,
 	MDBModalFooter,
+	MDBCardImage,
 } from "mdbreact";
 
-const ShowItem = ({ props }) => {
-	console.log(props.item.productReviews);
-	const revs = props.item;
+const ShowItem = (props) => {
 	const [modal, setModel] = useState(false);
-	// setReviews(props.item);
-	console.log(revs);
+	const [revs, setRevs] = useState(props.itemOne.productReviews);
 
 	const toggle = () => {
 		setModel(!modal);
@@ -26,11 +24,18 @@ const ShowItem = ({ props }) => {
 				MDBModal
 			</MDBBtn>
 			<MDBModal isOpen={modal} toggle={toggle} centered>
+				<MDBCardImage
+					className="img-fluid mx-auto"
+					cascade
+					src={props.itemOne.productImage}
+					top
+					alt="sample photo"
+				/>
 				<MDBModalHeader toggle={toggle}>
 					{" "}
-					{props.item.productName}{" "}
+					{props.itemOne.productName}{" "}
 				</MDBModalHeader>
-				<MDBModalBody>{props.item.productDescription}</MDBModalBody>
+				<MDBModalBody>{props.itemOne.productDescription}</MDBModalBody>
 				<Reviews revs={revs} />
 				<MDBModalFooter>
 					<MDBBtn color="secondary" onClick={toggle}>

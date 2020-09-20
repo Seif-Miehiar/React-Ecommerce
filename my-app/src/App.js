@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/navbar/navbar";
 import ProductCard from "./components/productCard/productCard";
 import FooterPage from "./components/footer/footer";
+import ProductTabs from "./components/productTabs/productTabs";
 import "./App.css";
 
 const App = () => {
@@ -79,11 +80,11 @@ const App = () => {
 			],
 		},
 	]);
-	console.log(products);
 	return (
 		<div className="App">
 			{/* <header className="App-header"></header> */}
 			<Header />
+			<ProductTabs />
 			<ProductCard products={products} />
 			<FooterPage />
 		</div>

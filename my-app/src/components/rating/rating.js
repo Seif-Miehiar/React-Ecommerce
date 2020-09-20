@@ -8,7 +8,6 @@ const RatingPage = () => {
 			<MDBRating
 				/*getValue={"hello"} submitHandler={"submit value"} */ feedback
 			/>
-			<Reviews />
 		</MDBContainer>
 	);
 };
