@@ -4,13 +4,13 @@ const ProductTabs = () => {
 	return (
 		<div>
 			<ul
-				class="nav nav-tabs md-tabs pt-3 d-flex justify-content-center"
+				className="nav nav-tabs md-tabs pt-3 d-flex justify-content-center"
 				id="myTabEx"
 				role="tablist"
 			>
-				<li class="nav-item">
+				<li className="nav-item">
 					<a
-						class="nav-link active show"
+						className="nav-link active show"
 						id="home-tab-ex"
 						data-toggle="tab"
 						href="#home-ex"
@@ -21,9 +21,9 @@ const ProductTabs = () => {
 						Home
 					</a>
 				</li>
-				<li class="nav-item">
+				<li className="nav-item">
 					<a
-						class="nav-link"
+						className="nav-link"
 						id="profile-tab-ex"
 						data-toggle="tab"
 						href="#profile-ex"
@@ -34,9 +34,9 @@ const ProductTabs = () => {
 						Profile
 					</a>
 				</li>
-				<li class="nav-item">
+				<li className="nav-item">
 					<a
-						class="nav-link"
+						className="nav-link"
 						id="contact-tab-ex"
 						data-toggle="tab"
 						href="#contact-ex"
@@ -48,9 +48,9 @@ const ProductTabs = () => {
 					</a>
 				</li>
 			</ul>
-			<div class="tab-content pt-5" id="myTabContentEx">
+			<div className="tab-content pt-5" id="myTabContentEx">
 				<div
-					class="tab-pane fade active show"
+					className="tab-pane fade active show"
 					id="home-ex"
 					role="tabpanel"
 					aria-labelledby="home-tab-ex"
@@ -66,7 +66,7 @@ const ProductTabs = () => {
 					</p>
 				</div>
 				<div
-					class="tab-pane fade"
+					className="tab-pane fade"
 					id="profile-ex"
 					role="tabpanel"
 					aria-labelledby="profile-tab-ex"
@@ -86,7 +86,7 @@ const ProductTabs = () => {
 					</p>
 				</div>
 				<div
-					class="tab-pane fade"
+					className="tab-pane fade"
 					id="contact-ex"
 					role="tabpanel"
 					aria-labelledby="contact-tab-ex"

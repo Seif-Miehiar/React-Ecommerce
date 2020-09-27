@@ -8,6 +8,7 @@ import "./App.css";
 const App = () => {
 	const [products, setProducts] = useState([
 		{
+			productCatagory: "Desserts",
 			productName: "Product One",
 			productPrice: 50,
 			productDescription: "First product to render",
@@ -20,6 +21,7 @@ const App = () => {
 			],
 		},
 		{
+			productCatagory: "Desserts",
 			productName: "Product Two",
 			productPrice: 75,
 			productDescription: "Second product to render",
@@ -32,6 +34,7 @@ const App = () => {
 			],
 		},
 		{
+			productCatagory: "breakfast",
 			productName: "Product Three",
 			productPrice: 75,
 			productDescription: "Third product to render",
@@ -44,6 +47,7 @@ const App = () => {
 			],
 		},
 		{
+			productCatagory: "breakfast",
 			productName: "Product Three",
 			productPrice: 75,
 			productDescription: "Third product to render",
@@ -56,6 +60,7 @@ const App = () => {
 			],
 		},
 		{
+			productCatagory: "breakfast",
 			productName: "Product Three",
 			productPrice: 75,
 			productDescription: "Third product to render",
@@ -68,6 +73,7 @@ const App = () => {
 			],
 		},
 		{
+			productCatagory: "breakfast",
 			productName: "Product Three",
 			productPrice: 75,
 			productDescription: "Third product to render",

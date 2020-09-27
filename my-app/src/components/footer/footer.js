@@ -16,20 +16,20 @@ const FooterPage = () => {
 					<MDBCol md="6">
 						<h5 className="title">Contact us</h5>
 						<ul>
-							<a class="li-ic mr-3" role="button">
-								<i class="fab fa-lg fa-linkedin-in"></i>
+							<a className="li-ic mr-3" role="button">
+								<i className="fab fa-lg fa-linkedin-in"></i>
 							</a>
-							<a class="git-ic mr-3" role="button">
-								<i class="fab fa-lg fa-github"></i>
+							<a className="git-ic mr-3" role="button">
+								<i className="fab fa-lg fa-github"></i>
 							</a>
-							<a class="fb-ic mr-3" role="button">
-								<i class="fab fa-lg fa-facebook-f"></i>
+							<a className="fb-ic mr-3" role="button">
+								<i className="fab fa-lg fa-facebook-f"></i>
 							</a>
-							<a class="ins-ic mr-3" role="button">
-								<i class="fab fa-lg fa-instagram"></i>
+							<a className="ins-ic mr-3" role="button">
+								<i className="fab fa-lg fa-instagram"></i>
 							</a>
-							<a class="email-ic mr-3" role="button">
-								<i class="far fa-lg fa-envelope"></i>
+							<a className="email-ic mr-3" role="button">
+								<i className="far fa-lg fa-envelope"></i>
 							</a>
 						</ul>
 					</MDBCol>

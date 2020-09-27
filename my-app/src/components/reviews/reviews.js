@@ -8,8 +8,8 @@ const Reviews = (props) => {
 	} else {
 		return props.revs.map((review, index) => {
 			return (
-				<MDBContainer>
-					<MDBListGroup key={index} style={{ width: "22rem auto" }}>
+				<MDBContainer key={index}>
+					<MDBListGroup style={{ width: "22rem auto" }}>
 						<MDBListGroupItem active href="#">
 							<div className="d-flex w-100 justify-content-between">
 								<h5 className="mb-1">review user name</h5>

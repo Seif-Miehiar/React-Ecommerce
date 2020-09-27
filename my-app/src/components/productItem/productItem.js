@@ -30,7 +30,7 @@ const ProductItem = ({ items }) => {
 						/>
 						<MDBCardBody cascade className="text-center">
 							<a href="#!" className="text-muted">
-								<h5>catagory</h5>
+								<h5>{item.productCatagory}</h5>
 							</a>
 							<MDBCardTitle>
 								<strong>
